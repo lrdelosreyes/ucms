@@ -1,16 +1,94 @@
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBCol,
+  MDBRow,
+  MDBIcon,
+  MDBBtn,
+} from "mdb-react-ui-kit";
 
 function Footer() {
   return (
-    <Navbar className="p-2 fixed-bottom">
-      <Container>
-        <Nav.Item className="text-white text-center w-100 small">
-          <small>© Lowil Ray Delos Reyes - All Rights Reserved 2022</small>
-        </Nav.Item>
-      </Container>
-    </Navbar>
+    <MDBFooter className="bg-dark text-center text-white">
+      <MDBContainer className="p-4 pb-0">
+        <section className="mb-4">
+          <MDBBtn
+            outline
+            color="light"
+            floating
+            className="m-1"
+            href="#!"
+            role="button"
+          >
+            <MDBIcon fab icon="facebook-f" />
+          </MDBBtn>
+
+          <MDBBtn
+            outline
+            color="light"
+            floating
+            className="m-1"
+            href="#!"
+            role="button"
+          >
+            <MDBIcon fab icon="twitter" />
+          </MDBBtn>
+
+          <MDBBtn
+            outline
+            color="light"
+            floating
+            className="m-1"
+            href="#!"
+            role="button"
+          >
+            <MDBIcon fab icon="google" />
+          </MDBBtn>
+          <MDBBtn
+            outline
+            color="light"
+            floating
+            className="m-1"
+            href="#!"
+            role="button"
+          >
+            <MDBIcon fab icon="instagram" />
+          </MDBBtn>
+
+          <MDBBtn
+            outline
+            color="light"
+            floating
+            className="m-1"
+            href="#!"
+            role="button"
+          >
+            <MDBIcon fab icon="linkedin-in" />
+          </MDBBtn>
+
+          <MDBBtn
+            outline
+            color="light"
+            floating
+            className="m-1"
+            href="#!"
+            role="button"
+          >
+            <MDBIcon fab icon="github" />
+          </MDBBtn>
+        </section>
+      </MDBContainer>
+
+      <div
+        className="text-center p-3"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+      >
+        © 2022 Copyright :{" "}
+        <a className="text-white" href="https://mdbootstrap.com/">
+          Lowil Ray Delos Reyes
+        </a>
+      </div>
+    </MDBFooter>
   );
 }
 
